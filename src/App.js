@@ -1,9 +1,10 @@
+/* eslint-disable react/react-in-jsx-scope */
 
-function App() {
+function App () {
   return (
     <div className="App">
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
