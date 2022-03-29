@@ -1,7 +1,15 @@
 import React from 'react'
-
-export const main = () => {
+import Navbar from './navbar/Navbar'
+import Sidebar from './sidebar/Sidebar'
+import '../index.css'
+const Main = () => {
   return (
-    <div>main</div>
+    <div className='main'>
+      <Navbar/>
+      <Sidebar/>
+
+    </div>
   )
 }
+
+export default Main

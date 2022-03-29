@@ -1,24 +1,18 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-
+import { Container, Row, Col, Image } from 'react-bootstrap'
+import Usuario from '../../assets/Usuario.svg'
+import Logo from '../../assets/logoInstituto.svg'
+import './navbarCss.css'
 const Navbar = () => {
   return (
     <>
-      <Container>
-        <Row className='justify-content-md-center'>
-          <Col xs lg='auto'>
-            1 of 3
-          </Col>
-          <Col md='auto'>Variable width content</Col>
+      <Container className='navbar-main'>
+        <Row className='justify-content-md-center align-items-center'>
+          <Col md='auto'><Image src={Logo}/></Col>
+          <Col><p>Instituto Provincial de Enseñanza Técnica y Media N°69 “Juana Manso de Noronha”</p></Col>
+          <Col md='auto'><Image src={Usuario}/></Col>
           <Col xs lg='2'>
-            3 of 3
-          </Col>
-        </Row>
-        <Row>
-          <Col>1 of 3</Col>
-          <Col md='auto'>Variable width content</Col>
-          <Col xs lg='2'>
-            3 of 3
+             Paula Urbinatti
           </Col>
         </Row>
       </Container>

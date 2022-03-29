@@ -1,10 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
-
-import Navbar from './components/navbar/Navbar'
+import Main from './components/Main'
 function App () {
   return (
     <div className="App">
-      <Navbar/>
+      <Main/>
     </div>
   )
 }

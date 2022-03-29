@@ -1,0 +1,15 @@
+.sidebar{
+    
+    z-index: -4; 
+    position: relative;
+    
+    width: 325px;
+    height: 100vh;
+    background-color: #F4F4F4;
+}
+.sidebar ul li{
+    list-style: none;
+    gap: 10px;
+    color: var(--text01);
+}
+
