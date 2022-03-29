@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from './navbar/Navbar'
+import Barra from './navbar/Barra'
 import Sidebar from './sidebar/Sidebar'
 import '../index.css'
 const Main = () => {
   return (
     <div className='main'>
-      <Navbar/>
+      <Barra/>
       <Sidebar/>
 
     </div>
