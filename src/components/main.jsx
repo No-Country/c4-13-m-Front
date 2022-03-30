@@ -1,12 +1,19 @@
 import React from 'react'
-import Barra from './navbar/Barra'
 import Sidebar from './sidebar/Sidebar'
+import ItemListContainer from './container/ItemListContainer'
 import '../index.css'
 const Main = () => {
   return (
     <div className='main'>
-      <Barra/>
-      <Sidebar/>
+      <div className='d-flex main-container' >
+     <div className='left' >
+     <Sidebar/>
+     </div>
+        <div className='right' >
+          hay algo aca
+          <ItemListContainer/>
+        </div>
+      </div>
     </div>
   )
 }

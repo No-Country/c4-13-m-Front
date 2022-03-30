@@ -1,9 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Main from './components/Main'
+import RouterApp from './router/RouterApp'
 function App () {
   return (
     <div className="App">
-      <Main/>
+      <RouterApp/>
     </div>
   )
 }
