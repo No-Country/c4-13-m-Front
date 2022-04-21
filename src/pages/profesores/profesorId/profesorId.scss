@@ -1,0 +1,83 @@
+.profesorId{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            padding-left: 40px;
+            h2{
+                color: #4057A9;
+                margin-bottom: 40px;
+            }
+            .row{
+                .nombre{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: 28px;
+                    font-weight: 700;
+                    font-style: italic;
+                }
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .right{
+                    button{
+                        margin-top: 79px;
+                        margin-right: 39px;
+                        margin-bottom: 40px;
+                        height: 46px;
+                        width: 286px;
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #4057A9;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .row-2{
+                label{
+                    color: #222222;
+                    font-size: 24px;
+                    font-style: italic;
+                }
+                margin-left: 122px;
+                gap: 68px;
+                display: flex;
+                margin-bottom: 40px;
+                .left,
+                .center,
+                .right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+            .table{
+                display: flex;
+                flex-direction: column;
+                width: 690px;
+                .table-title{
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #F4F4F4;
+                }
+                .table-description{
+                    padding: 20px 5px;
+                    position: relative;
+                    display: flex;
+                    border-bottom: 1px solid gray;
+                justify-content: space-around;
+                    img{
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

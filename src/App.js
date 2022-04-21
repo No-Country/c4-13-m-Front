@@ -1,10 +1,12 @@
-/* eslint-disable react/react-in-jsx-scope */
 
-function App () {
+import './App.scss';
+import Home from './components/home/Home';
+function App() {
   return (
     <div className="App">
+      <Home/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

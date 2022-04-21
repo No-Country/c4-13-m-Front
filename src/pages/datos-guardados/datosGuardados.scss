@@ -1,0 +1,28 @@
+.datosGuardados{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            height: 80vh;
+            display: flex;
+            gap: 80px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .success{
+                font-weight: 700;
+                font-size: 24px;
+            }
+            .home{
+
+                color: #4057A9;
+                
+            }
+        }
+    }
+}

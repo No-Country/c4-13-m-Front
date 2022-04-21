@@ -1,0 +1,60 @@
+.materiasId{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+        
+        .container{
+            ::-webkit-scrollbar{
+                width: 10px;
+                display: hidden;
+            }
+            padding-top: 20px;
+            height: 76%;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            width: 793px;
+            overflow-y: scroll;
+            .row{
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .left,
+                .right{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .left{
+                    color: #454040;
+                    font-weight: 800;
+                    font-style: italic;
+                    font-size: 24px;
+                }
+            }
+            .table-title{
+                display: flex;
+                width: 100%;
+                background-color: #F4F4F4;
+                justify-content: space-around;
+                padding: 20px 0;
+                border-radius: 20px;
+                box-shadow: 0px 4px 8px 0px #00000026;
+
+            }
+            .table-description{
+                display: flex;
+                width: 100%;
+                border-bottom: 1px solid #45404033;
+                justify-content: space-around;
+                padding: 20px 0;
+            }
+        }
+    }
+}
