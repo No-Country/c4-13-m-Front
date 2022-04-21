@@ -1,0 +1,83 @@
+.login{
+    height: 100vh;
+    background-color: #F4F4F4;
+    .top{
+        color: #F4F4F4;
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        background: #4057A9;
+        align-items: center;
+        padding: 0 40px;
+        box-shadow: 0px 4px 6px 1px rgba(0, 0, 0, 0.2);
+        height: 120px;
+        .left,
+        .right{
+            width: 50%;
+        }
+    }
+    .bottom{
+        display: flex;
+        .left,
+        .right{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+        .left{
+            color: #4057A9;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 70px;
+            }
+            h2{
+                font-size: 24px;
+            }
+        }
+        .right{
+            
+            .card{
+                color: #4057A9;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 3% auto;
+                height: 464px;
+                width: 386px;
+                border-radius: 20px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                img{
+                    height: 117px;
+                    width: 106px;
+                }
+                input{
+                    padding-left: 20px;
+                    height: 44px;
+                    width: 287px;
+                    border-radius: 10px;
+                    border: none;
+                    background: #F4F4F4;
+                    margin: 15px 0;
+                    
+                }
+                button{
+                    
+                    width: 311px;
+                    height: 46px;
+                    color: #FFFFFF;
+                    background: #4057A9;
+                    border-radius: 20px;
+                    border: #F4F4F4;
+                    cursor: pointer;
+                    
+                }
+                
+
+            }
+        }
+    }
+}

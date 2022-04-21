@@ -1,0 +1,38 @@
+.cursos{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            padding: 20px;
+            h1{
+                color: #4057A9;
+                margin-bottom: 40px
+                ;
+            }
+            .turno{
+                width: 387px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+                .row{
+                    font-size: 20px;
+                    color: #454040;
+                    font-weight: 800;
+                    height: 30px;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #45404033;
+                    padding: 0 10px;
+                    img{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

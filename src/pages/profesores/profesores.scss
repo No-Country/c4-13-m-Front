@@ -1,0 +1,58 @@
+.profesores{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding-top: 79px;
+            width: 80%;
+           
+            align-items: center;
+            font-weight: 700;
+            font-size: 20px;
+            color: #4057A9;
+            .anadir{
+                align-self: flex-end;
+            }
+            img{
+                margin-top: 62px;
+                margin-bottom: 12px;
+                width: 83.12px;
+                height: 60px;
+            }
+            p{
+                margin-bottom: 37px;
+            }
+            input{
+                width: 485px;
+                height: 54px;
+                background: rgba(33, 33, 33, 0.08);
+                border-radius: 10px;
+                padding-left: 14px;
+                margin-bottom: 26px;
+                border: none;
+            }
+            button{
+                width: 286px;
+                height: 46px;
+                background: #4057A9;
+                border-radius: 20px;
+                
+                border: 1px solid #FFFFFF;
+                font-weight: 700;
+                font-size: 16px;
+                color: #FFFFFF;
+                &:hover{
+                    background: rgba(123, 97, 255, 0.28);
+                }
+            }
+        }
+    }
+}

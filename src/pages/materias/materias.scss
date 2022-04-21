@@ -1,0 +1,80 @@
+.materias{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .popup{
+        
+        flex-direction: column;
+        color: blue;
+        .row{
+            width: 100%;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                width:285px;
+                height: 48px;
+                background-color: #F4F4F4;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+        button{
+            height: 46px;
+            width: 311px;
+            border-radius: 20px;
+            border: none;
+            
+        }
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 79px;
+        width: 80%;
+       
+        align-items: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #4057A9;
+        .anadir{
+            align-self: flex-end;
+        }
+        img{
+            margin-top: 62px;
+            margin-bottom: 12px;
+            width: 83.12px;
+            height: 60px;
+        }
+        p{
+            margin-bottom: 37px;
+        }
+        input{
+            width: 485px;
+            height: 54px;
+            background: rgba(33, 33, 33, 0.08);
+            border-radius: 10px;
+            padding-left: 14px;
+            margin-bottom: 26px;
+            border: none;
+        }
+        button{
+            width: 286px;
+            height: 46px;
+            background: #4057A9;
+            border-radius: 20px;
+            
+            border: 1px solid #FFFFFF;
+            font-weight: 700;
+            font-size: 16px;
+            color: #FFFFFF;
+            &:hover{
+                background: rgba(123, 97, 255, 0.28);
+            }
+        }
+        
+    }
+    
+}

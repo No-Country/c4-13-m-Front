@@ -1,0 +1,56 @@
+.calendario{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+        
+        .container{
+            color: #4057A9;
+            display: flex;
+            flex-direction: column;
+            .top{
+               
+                height: 330px;
+                display: flex;
+
+                .left,
+                .right{
+                    p{
+                        text-align:left;
+                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 50%;
+                    gap: 20px;
+                
+                    input{
+                        width: 284px;
+                        height: 54px;
+                        background: rgba(33, 33, 33, 0.08);
+                        border-radius: 10px;
+                        border: none;
+                        padding-left: 20px;
+                    }
+                }
+            }
+            .bottom{
+                display: flex;
+                justify-content: center;
+                button{
+                    height: 46px;
+                    width: 286px;
+                    background: #4057A9;
+                    border-radius: 20px;
+                    border: #FFFFFF;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

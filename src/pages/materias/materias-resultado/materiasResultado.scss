@@ -1,0 +1,97 @@
+.materiasResultado{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .popup{
+        
+        flex-direction: column;
+        color: blue;
+        .row{
+            width: 100%;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            input{
+                width:285px;
+                height: 48px;
+                background-color: #F4F4F4;
+                border: none;
+                border-radius: 8px;
+            }
+        }
+        button{
+            height: 46px;
+            width: 311px;
+            border-radius: 20px;
+            border: none;
+            
+        }
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .anadir{
+                align-self: flex-end;
+            }
+            button{
+                margin-top: 79px;
+                margin-right: 39px;
+                
+                height: 46px;
+                width: 286px;
+                border-radius: 20px;
+                border: none;
+                background-color: #4057A9;
+                color: #FFFFFF;
+            }
+            .list{
+                p{
+                    color: #4057A9;
+                }
+                margin-top: 62px;
+                gap: 13px;
+                display: flex;
+                flex-direction: column;
+                .row{
+                    padding: 5px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width:691px;
+                    background-color: #F4F4F4;
+                    border-radius: 20px;
+                    .left,
+                    .right{
+                        display: flex;
+                        align-items: center;
+                        
+                    }
+                    .left{
+                        img{
+                            width: 45px;
+                        }
+                        gap: 35px;
+                    }
+                    .right{
+                        gap: 15px;
+                    }
+                    
+                    
+                }
+                
+                
+            }
+        }
+        
+
+    }
+}

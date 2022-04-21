@@ -1,11 +1,12 @@
-/* eslint-disable react/react-in-jsx-scope */
-import RouterApp from './router/RouterApp'
-function App () {
+
+import './App.scss';
+import Home from './components/home/Home';
+function App() {
   return (
     <div className="App">
-      <RouterApp/>
+      <Home/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
