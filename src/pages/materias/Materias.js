@@ -17,12 +17,16 @@ const Materias = () => {
             <div className="container">
               
                 <button className='anadir' onClick={()=> setMateria(true)}>
-                  + Añadir Materia
+                  + Añadir Materia/Cargo
                 </button>
              
 
             <img src={materias} alt={materias} />
-             <p>Ingresá el nombre de la Materia</p>
+             <p>Año:</p>
+              <input type="text" placeholder='Buscar' />
+              <p>Especialidad::</p>
+              <input type="text" placeholder='Buscar' />
+              <p>Materia: :</p>
               <input type="text" placeholder='Buscar' />
               <Link to='buscar-materias'>
               <button >
@@ -38,9 +42,11 @@ const Materias = () => {
            <label>Nombre:</label>
          <input type="text" />
          </div>
-         <div className="row">
-         <label>Especialidad:</label>
-          <input type="text" />
+         <div className='row'>
+          <label>Materia:</label>
+          <input type="checkbox" />
+          <label>Cargo:</label>
+          <input type="checkbox" />
          </div>
           <button>Guardar</button>
           <button onClick={()=> setMateria(false)}>Cancelar</button>

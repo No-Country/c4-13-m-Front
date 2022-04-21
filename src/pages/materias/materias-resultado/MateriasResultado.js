@@ -62,9 +62,11 @@ const MateriasResultado = () => {
            <label>Nombre:</label>
          <input type="text" />
          </div>
-         <div className="row">
-         <label>Especialidad:</label>
-          <input type="text" />
+         <div className='row'>
+          <label>Materia:</label>
+          <input type="checkbox" />
+          <label>Cargo:</label>
+          <input type="checkbox" />
          </div>
           <button>Guardar</button>
           <button onClick={()=> setMateria(false)}>Cancelar</button>
