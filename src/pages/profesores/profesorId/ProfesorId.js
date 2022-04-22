@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../../../components/navbar/Navbar'
 import Sidebar from '../../../components/sidebar/Sidebar'
+import deletar from '../../../assets/delete.svg'
 import user from '../../../assets/Usuario.svg'
 import './profesorId.scss'
 import { useParams } from 'react-router-dom'
@@ -18,9 +19,9 @@ const ProfesorId = () => {
 
     }
   }, [id])
-  const { schedules } = profesorForID
+  const { firstName, lastName, dni, phone, email, file, schedules } = profesorForID
 
-
+  
   return (
     <>
       <div className='profesorId'>
@@ -62,10 +63,30 @@ const ProfesorId = () => {
                 </div>
 
               </div>
-              {
-                !schedules ? <div>Hay materias asignadas pero no se pueden mostrar </div> :  <div><h1>No hay materias asignadas</h1></div>
-              }
-      
+              <h2>Materias asignadas</h2>
+              <div className="table">
+                <div className="table-title">
+                  <span>Materia</span>
+                  <span>Curso</span>
+                  <span>Carga</span>
+                </div>
+
+                {
+                  !schedules ? <div>No hay materias asignadas</div> :
+                    schedules.map((schedule, index) => {
+                      return (
+                        <div className='table-description' key={index} >
+                          <p>{schedule.activity}</p>
+                          <p>{schedule.grade}</p>
+                          <p>{schedule.position}</p>
+                          <button >
+                            <img src={deletar} alt={deletar} />
+                          </button>
+                        </div>
+                      )
+                    })
+                }
+              </div>
             </div>
           </div>
         </div>
