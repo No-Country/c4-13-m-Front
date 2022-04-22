@@ -63,17 +63,17 @@ const ResultadoProfesores = ({ profesor }) => {
 
           </div>
       <form onSubmit={handleSubmit}>
-      <Popup trigger={buttonDeletar}>
+      <Popup className='popup' trigger={buttonDeletar}>
         
         <p>¿Estas seguro de eliminar?</p>
         <div className='buttons'>
  
-        <button 
+        <button className='btn-1'
         type='submit'
         >
             Aceptar
           </button>
-          <button onClick={()=> setbuttonDeletar(false)}> 
+          <button className='btn-2' onClick={()=> setbuttonDeletar(false)}> 
             Cancelar
           </button>
         </div>

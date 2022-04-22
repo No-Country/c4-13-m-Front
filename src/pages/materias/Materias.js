@@ -15,26 +15,43 @@ const Materias = () => {
         <div className='main'>
             <Navbar/>
             <div className="container">
-              
-                <button className='anadir' onClick={()=> setMateria(true)}>
+            <div className="top">
+            
+            <div className="left">
+            
+            <img src={materias} alt={materias} />
+            Materias
+            </div>
+              <div className="right">  <button className='anadir' onClick={()=> setMateria(true)}>
                   + Añadir Materia/Cargo
-                </button>
+                </button></div>
+            </div>
              
 
-            <img src={materias} alt={materias} />
-             <p>Año:</p>
+            
+             <form className='form'>
+             <div className="top">
+             <div className="row">
+             <spawn>Año:</spawn>
               <input type="text" placeholder='Buscar' />
-              <p>Especialidad::</p>
+             </div>
+              <div className="row">
+              <spwan>Especialidad:</spwan>
               <input type="text" placeholder='Buscar' />
-              <p>Materia: :</p>
+              </div>
+             </div>
+              <div className="row">
+              <spwan>Materia:</spwan>
               <input type="text" placeholder='Buscar' />
+              </div>
               <Link to='buscar-materias'>
               <button >
                 Buscar
               </button>
               </Link>
-            </div>
-            
+           
+             </form>
+             </div>
         </div>
         <Popup classname='popup' trigger={materia}>
           <h2>Añadir Materia</h2>
@@ -44,12 +61,12 @@ const Materias = () => {
          </div>
          <div className='row'>
           <label>Materia:</label>
-          <input type="checkbox" />
+          <input  className='checkbox' type="checkbox" />
           <label>Cargo:</label>
-          <input type="checkbox" />
+          <input  className='checkbox' type="checkbox" />
          </div>
-          <button>Guardar</button>
-          <button onClick={()=> setMateria(false)}>Cancelar</button>
+          <button className='btn-1'>Guardar</button>
+          <button className='btn-2' onClick={()=> setMateria(false)}>Cancelar</button>
           </Popup>
     </div>
   )

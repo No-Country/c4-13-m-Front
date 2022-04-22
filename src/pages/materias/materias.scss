@@ -19,6 +19,13 @@
                 border: none;
                 border-radius: 8px;
             }
+            
+            .checkbox{
+                height: 30px;
+                width: 30px;
+                border-radius: 7px;
+                border: 2px solid #4057A9;
+            }
         }
         button{
             height: 46px;
@@ -26,6 +33,14 @@
             border-radius: 20px;
             border: none;
             
+        }
+        .btn-1{
+            color: #F4F4F4;
+            background-color: #4057A9;
+        }
+        .btn-2{
+            color: #4057A9;
+            border: 2px solid #4057A9
         }
     }
     .container{
@@ -39,6 +54,19 @@
         font-weight: 700;
         font-size: 20px;
         color: #4057A9;
+        .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-bottom: 40px;
+            .left{
+                display: flex;
+                align-items: center;
+                font-size: 32px;
+                gap: 10px;
+            }
+        }
         .anadir{
             align-self: flex-end;
         }
@@ -51,15 +79,26 @@
         p{
             margin-bottom: 37px;
         }
-        input{
-            width: 485px;
-            height: 54px;
-            background: rgba(33, 33, 33, 0.08);
-            border-radius: 10px;
-            padding-left: 14px;
-            margin-bottom: 26px;
-            border: none;
+        .form{
+            align-items: center;
+            justify-content: space-between;
+            input{
+                width: 285px;
+                height: 54px;
+                background: rgba(33, 33, 33, 0.08);
+                border-radius: 10px;
+                padding-left: 14px;
+                margin-bottom: 26px;
+                border: none;
+            }
+            .top{
+                display: flex;
+            }
+            display: flex;
+            flex-direction: column;
+            
         }
+        
         button{
             width: 286px;
             height: 46px;
