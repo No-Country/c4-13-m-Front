@@ -68,7 +68,7 @@ const ProfesorId = () => {
 
               </div>
               {
-                !schedules ? <div>Hay materias asignadas pero no se pueden mostrar </div> :  <div>No hay materias asignadas</div>
+                !schedules ? <div>Hay materias asignadas pero no se pueden mostrar </div> :  <div><h1>No hay materias asignadas</h1></div>
               }
       
             </div>
