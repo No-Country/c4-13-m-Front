@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../../../components/navbar/Navbar'
 import Sidebar from '../../../components/sidebar/Sidebar'
-import deletar from '../../../assets/delete.svg'
 import user from '../../../assets/usuario.svg'
 import './profesorId.scss'
 import { useParams } from 'react-router-dom'
-import axios from 'axios'
 
 const ProfesorId = () => {
   const { id } = useParams()
@@ -20,12 +18,9 @@ const ProfesorId = () => {
 
     }
   }, [id])
-  const { firstName, lastName, dni, phone, email, file, schedules } = profesorForID
+  const { schedules } = profesorForID
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    axios.delete(`https://esc-ipetm69.herokuapp.com/personal/${id}`)
-  }
+
   return (
     <>
       <div className='profesorId'>
