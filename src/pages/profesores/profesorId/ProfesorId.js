@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from '../../../components/navbar/Navbar'
 import Sidebar from '../../../components/sidebar/Sidebar'
-import user from '../../../assets/usuario.svg'
+import user from '../../../assets/Usuario.svg'
 import './profesorId.scss'
 import { useParams } from 'react-router-dom'
 
