@@ -1,6 +1,6 @@
 import React from 'react'
 import './navbar.scss'
-import user from '../../assets/usuario.svg'
+import user from '../../assets/Usuario.svg'
 const Navbar = () => {
   return (
     <div className='navbar'>
