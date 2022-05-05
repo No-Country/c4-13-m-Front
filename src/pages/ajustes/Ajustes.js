@@ -13,7 +13,8 @@ function Ajustes() {
               <div className="container">
                 <div className="top">
                   <div className="left">
-                    <h2>Datos personales</h2>
+                  <h2>Datos personales</h2>
+                  
                     <div className="row">
                       <label name='firstName'>
                         Nombre:
