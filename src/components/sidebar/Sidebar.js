@@ -58,7 +58,7 @@ const Sidebar = () => {
             </NavLink>
             </ul>
       <ul>
-        <NavLink to= '/'>
+        <NavLink to= '/ajustes'>
           <li>
             <img src={ajustes} alt={ajustes} />
             Ajustes
