@@ -1,0 +1,15 @@
+.newProfesores{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    
+    
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            
+        }
+    }
+
+}

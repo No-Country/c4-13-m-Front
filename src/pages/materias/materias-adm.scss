@@ -1,0 +1,23 @@
+.materias{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    
+    .container{
+       display: flex;
+       height: 70vh;
+       align-items: center;
+       justify-content: center;
+       gap: 20px;
+       .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 139px;
+        width: 280px;
+        border-radius: 20px;
+        background-color: #F4F4F4;
+        ;
+       }
+    }    
+}

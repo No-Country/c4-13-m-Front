@@ -18,6 +18,7 @@ import ResultadoProfesores from '../pages/profesores/resultado-profesores/Result
 import ProfesorId from '../pages/profesores/profesorId/ProfesorId'
 import MateriasResultado from '../pages/materias/materias-resultado/MateriasResultado'
 import MateriasId from '../pages/materias/materiasId/MateriasId'
+import Ajustes from '../pages/ajustes/Ajustes';
 const RouterApp = () => {
   const [search, setSearch] = useState(null)
   const [profesor, setProfesor] = useState([])
@@ -77,6 +78,8 @@ const RouterApp = () => {
             <Route index element={<Login />} />
           </Route>
           <Route path="cursos" element={<Cursos />}>
+          </Route>
+          <Route path="ajustes" element={<Ajustes />}>
           </Route>
           <Route path="confirm" element={<DatosGuardados />}>
           </Route>
