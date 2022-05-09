@@ -1,0 +1,51 @@
+.listaUsuarios{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    height: 100vh;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            padding: 40px;
+            .head{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                margin-bottom: 65px;
+                h1{
+                    color: #4057A9;
+                }
+                button{
+                    height: 46px;
+                    width: 286px;
+                    left: 0px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: #4057A9;
+                    color: #FFFFFF;
+                }
+            }
+            .lista-usuarios{
+                display: flex;
+                flex-direction: column;
+                width: 500px;
+                .row{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid gray;
+                    justify-content: space-between;
+                    padding: 0 10px 10px;
+                    .left{
+                        color: #454040;
+                        ;
+                    }
+                    .right{
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

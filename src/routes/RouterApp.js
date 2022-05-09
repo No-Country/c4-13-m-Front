@@ -19,6 +19,9 @@ import ProfesorId from '../pages/profesores/profesorId/ProfesorId'
 import MateriasResultado from '../pages/materias/materias-resultado/MateriasResultado'
 import MateriasId from '../pages/materias/materiasId/MateriasId'
 import Ajustes from '../pages/ajustes/Ajustes';
+import ListaUsuarios from '../pages/ajustes/lista-usuarios/ListaUsuarios';
+import EditarUsuario from '../pages/ajustes/editar-usuario/EditarUsuario';
+import ResultadoCalendario from '../pages/calendario/resultado-calendario/ResultadoCalendario';
 const RouterApp = () => {
   const [search, setSearch] = useState(null)
   const [profesor, setProfesor] = useState([])
@@ -57,6 +60,9 @@ const RouterApp = () => {
           <Route index element={<Home />} />
           <Route path="calendario">
             <Route index element={<Calendario />} />
+            <Route path='resultado-calendario'>
+              <Route index element={<ResultadoCalendario />} />
+            </Route>
           </Route>
           <Route path="profesores">
             <Route index element={<Profesores handleSearch={handleSearch} />} />
@@ -79,7 +85,13 @@ const RouterApp = () => {
           </Route>
           <Route path="cursos" element={<Cursos />}>
           </Route>
-          <Route path="ajustes" element={<Ajustes />}>
+          <Route path="ajustes">
+            <Route index element={<Ajustes/>}/>
+            <Route path='lista-usuarios' >
+              <Route index element={<ListaUsuarios/>}/>
+              <Route path='editar-usuarios' element={<EditarUsuario/>}/>
+            </Route>
+            
           </Route>
           <Route path="confirm" element={<DatosGuardados />}>
           </Route>

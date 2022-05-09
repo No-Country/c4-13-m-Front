@@ -1,6 +1,32 @@
 .login{
     height: 100vh;
     background-color: #F4F4F4;
+    .popup{
+        
+        p{
+            width: 290px;
+            text-align: justify;
+            color: #4057A9;
+        }
+        input{
+            height: 44px;
+            width: 287px;
+            border-radius: 10px;
+            border-radius: 10px;
+            background-color: #F4F4F4;
+            border: none;
+            padding-left: 20px;
+        }
+        .btn-1{
+            background-color: #4057A9;
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+        .btn-2{
+            color: #4057A9;
+            font-weight: 700;
+        }
+    }
     .top{
         color: #F4F4F4;
         font-weight: 700;
@@ -73,7 +99,11 @@
                     border-radius: 20px;
                     border: #F4F4F4;
                     cursor: pointer;
+                    margin-bottom: 20px;
                     
+                }
+                span{
+                    cursor: pointer ;
                 }
                 
 

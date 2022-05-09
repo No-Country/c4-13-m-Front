@@ -1,4 +1,4 @@
-.newProfesores{
+.ajustes{
     display: grid;
     grid-template-columns: 2fr 6fr;
     
@@ -8,6 +8,45 @@
         flex-direction: column;
         height: 100vh;
         .container{
+            display: flex;
+            flex-direction: column;
+           
+            .top{
+                .head{
+                    display: flex;
+                    
+                    justify-content: space-between;
+                    button{
+                        height: 46px;
+                        width: 286px;
+                        background: #4057A9;
+                        color: #FFFFFF;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 20px;
+                    }
+                }
+                display: flex;
+                width: 400px;
+                flex-direction: column;
+                padding-left: 40px;
+                .row{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 0;
+                    align-items: center;
+                    .checkbox{
+                        height: 30px;
+                        width: 30px;
+                        border: 2px solid #4057A9!important;
+                    }
+                    input{
+                        padding-left: 20px;
+                        height: 48px;
+                        width: 285px;
+                        
+                    }
+                }
+            }
             
         }
     }

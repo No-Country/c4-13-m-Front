@@ -207,7 +207,7 @@ const NewProfesores = () => {
                 <button onClick={()=> setbuttonConfirm(true)}>
                     Guardar
                   </button>
-                  <button onClick={()=> setbuttonConfirm(true)}>
+                  <button onClick={()=> setbuttonConfirm(false)}>
                     Cancelar
                   </button>
                 </div>

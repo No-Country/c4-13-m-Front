@@ -4,6 +4,7 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import './calendario.scss'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Link } from 'react-router-dom';
 
 //https://www.npmjs.com/package/react-datepicker Librería para el calendario
 const Calendario = () => {
@@ -16,7 +17,7 @@ const Calendario = () => {
         <Navbar />
         <div className="container">
           <div className="top">
-            <div className="left">
+            {/* <div className="left">
               <p>Seleccione una fecha</p>
               <div className='fecha'>
                 <label name="fecha">
@@ -31,9 +32,9 @@ const Calendario = () => {
                   }}
                   isClearable={true}
                 />
-              </div>
+              </div> 
 
-            </div>
+            </div>*/}
 
             <div className="right">
 
@@ -48,7 +49,9 @@ const Calendario = () => {
             </div>
           </div>
           <div className="bottom">
+            <Link to="resultado-calendario">
             <button>buscar</button>
+            </Link>
           </div>
         </div>
 

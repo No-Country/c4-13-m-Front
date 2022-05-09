@@ -1,0 +1,64 @@
+.editarUsuario{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            h1{
+                color: #4057A9;
+            }
+            .row,
+            .checkbox{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 400px;
+                margin: 20px 0;
+                color: #4057A9;
+            }
+            .row{
+               input{
+                height: 48px;
+                width: 285px;
+                border-radius: 8px;
+                border: none;
+                background: #F4F4F4;
+               
+               }
+               gap: 10px;
+
+            }
+            .checkbox{
+                input{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .buttons{
+                display: flex;
+                gap: 10px;
+                button{
+                    height: 46px;
+                    width: 289px;
+                    border-radius: 20px;
+                    border: none;
+                }
+                .btn-1{
+                    color: #F4F4F4;
+                    background-color: #4057A9;
+                }
+                .btn-2{
+                    border: 2px solid #4057A9;
+                    color: #4057A9;
+                }
+            }
+
+        }
+
+    }
+}

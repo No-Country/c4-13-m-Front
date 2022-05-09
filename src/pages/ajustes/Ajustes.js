@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../../components/navbar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
 import './ajustes.scss'
+import { Link } from 'react-router-dom'
 
 function Ajustes() {
     return (
@@ -9,11 +10,20 @@ function Ajustes() {
           <Sidebar/>
           <div className='main'>
             <Navbar/>
-            <form >
+            
               <div className="container">
+              <form >
                 <div className="top">
-                  <div className="left">
+              
+                  <div className="head">
                   <h2>Datos personales</h2>
+                  <Link to="lista-usuarios">
+                  <button>+ Añadir / Modificar Usuario</button>
+                  </Link>
+                  </div>
+                    
+                   
+                  
                   
                     <div className="row">
                       <label name='firstName'>
@@ -50,7 +60,7 @@ function Ajustes() {
                         <input 
                         type="email"
                         className='form-control'
-                        
+                        placeholder='Email'
                         required 
                         />
                     </div>
@@ -110,7 +120,7 @@ function Ajustes() {
                         required
                         />
                     </div>
-                  </div>
+                
                   
                 </div>
                     
@@ -130,9 +140,10 @@ function Ajustes() {
                                   </button>
                                 </div>
                               </div>
-                    </div> 
+                   
           
-          </form>
+                    </form>
+                    </div> 
           </div>
         </div>
       )
